@@ -41,6 +41,7 @@ const waitFor = function (second) {
 let currentImg;
 
 
+//create image function
 createImage("images/img-1.jpg")
   .then((img) => {
     currentImg = img;
