@@ -1,6 +1,7 @@
 
 const imgContainer = document.querySelector(".images");
 
+
 const createImage = function (imgPath) {
   return new Promise(function (resolve, reject) {
     const img = document.createElement("img");
@@ -29,6 +30,7 @@ const createImage = function (imgPath) {
 
 // after waitFor
 
+
 const waitFor = function (second) {
   return new Promise(function (resolve) {
     console.log("wait for 2 seconds");
@@ -37,6 +39,7 @@ const waitFor = function (second) {
 };
 
 let currentImg;
+
 
 createImage("images/img-1.jpg")
   .then((img) => {
